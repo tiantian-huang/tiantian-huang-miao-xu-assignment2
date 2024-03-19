@@ -1,0 +1,50 @@
+.home-container {
+  padding: 20px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.home-title {
+  margin-bottom: 20px;
+  color: #6d6875;
+  font-size: 2.5rem;
+}
+
+.home-subtitle {
+  color: #6d6875;
+  margin-top: 40px;
+  font-size: 2rem;
+}
+
+.home-content {
+  margin-top: 20px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.rules-list {
+  text-align: left;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.rules-list li {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding: 15px;
+  }
+
+  .home-title,
+  .home-subtitle {
+    font-size: 1.8rem;
+  }
+}

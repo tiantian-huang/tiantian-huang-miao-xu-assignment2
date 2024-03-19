@@ -1,0 +1,23 @@
+/* CreditsPage.css */
+.credits-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.credits-title {
+  color: #6d6875;
+  margin-bottom: 20px;
+}
+
+.credits-description {
+  margin-bottom: 10px;
+}
+
+.github-link {
+  color: #5e548e;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}

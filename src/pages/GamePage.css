@@ -1,0 +1,76 @@
+.game-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Choose a font that suits your design */
+}
+
+.game-board {
+  display: grid;
+  gap: 2px;
+  margin-top: 20px;
+  border: 1px solid #ccc; /* A subtle border can help define the grid area */
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee; /* Light color for both alive and dead cells */
+}
+
+.cell.alive {
+  background-color: #333; /* Dark color for alive cells to stand out */
+}
+
+button {
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #9c89b8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #5e548e;
+}
+
+.error-message {
+  color: #ad2831;
+  margin-top: 5px;
+}
+
+input {
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+.living-cells-count {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #6d6875;
+}
+
+.form-group,
+.living-cells-count,
+.buttons-row {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttons-row button {
+  margin: 0 10px; /* Adds spacing between buttons */
+}
+
+/* Adjust if needed for additional styling */

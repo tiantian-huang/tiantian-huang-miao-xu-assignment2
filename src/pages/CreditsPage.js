@@ -1,13 +1,12 @@
-// CreditsPage.js
 import React from 'react';
-import './CreditsPage.css'; // Make sure to create a CreditsPage.css file with your desired styles
+import './CreditsPage.css';
 
 const CreditsPage = () => {
     return (
         <div className="credits-container">
             <h1 className="credits-title">Credits</h1>
             <p className="credits-description">This project was developed by Tiantian Huang and Miao Xu.</p>
-            <a href="https://github.com/yourusername" className="github-link">GitHub Repository</a>
+            <a href="https://github.com/tiantian-huang/tiantian-huang-miao-xu-assignment2/tree/main" className="github-link">GitHub Repository</a>
         </div>
     );
 }

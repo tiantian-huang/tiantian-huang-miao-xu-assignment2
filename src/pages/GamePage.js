@@ -39,14 +39,11 @@ const createClusteredGrid = (rows, cols, targetAlivePercentage = 0.075) => {
 };
 
 const Cell = ({ cell, onClick }) => {
-    // 设置HSL颜色的基础值
-    const hue = 331; // 约等于#e0b1cb的色相
-    const saturation = 60; // 饱和度
-    let lightness = 83; // 亮度
+    const hue = 331; 
+    const saturation = 60;
+    let lightness = 83;
   
-    // 如果细胞活着，根据其generation减少亮度，以实现颜色加深的效果
     if (cell.alive) {
-      // 每代使颜色更暗5%，但不低于30%的亮度
       lightness = Math.max(lightness - cell.generation * 5, 30);
     }
   
@@ -119,7 +116,7 @@ const GamePage = () => {
       const toggleCellState = (row, col) => {
         const newGrid = JSON.parse(JSON.stringify(gridState));
         newGrid[row][col].alive = gridState[row][col].alive ? 0 : 1;
-        newGrid[row][col].generation = newGrid[row][col].alive ? 1 : 0; // Reset generation when toggling
+        newGrid[row][col].generation = newGrid[row][col].alive ? 1 : 0;
         setGridState(newGrid);
         setLivingCount(newGrid.flat().filter(cell => cell.alive).length);
       };

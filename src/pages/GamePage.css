@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  font-family: Arial, sans-serif; /* Choose a font that suits your design */
+  font-family: Arial, sans-serif;
 }
 
 .game-board {
   display: grid;
   gap: 2px;
   margin-top: 20px;
-  border: 1px solid #ccc; /* A subtle border can help define the grid area */
+  border: 1px solid #ccc;
 }
 
 .cell {
@@ -20,11 +20,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #eee; /* Light color for both alive and dead cells */
+  background-color: #eee;
 }
 
 .cell.alive {
-  background-color: #333; /* Dark color for alive cells to stand out */
+  background-color: #333;
 }
 
 button {
@@ -70,7 +70,5 @@ input {
 }
 
 .buttons-row button {
-  margin: 0 10px; /* Adds spacing between buttons */
+  margin: 0 10px;
 }
-
-/* Adjust if needed for additional styling */
